@@ -50,6 +50,30 @@ El proyecto chatBot tiene como fin mostrar preguntas y respuestas definidas ante
    muestra el nombre, enunciado y entidad del chatbot
    
     - Sugerencia
+    atributos:
+ String categoria_sugerencia;
+ int usuario_id;
+ String enunciado;
+
+
     - Categoria
+ atributos: 
+  int id;
+  String nombre;
+  ArrayList<Pregunta> preguntas;
+  ArrayList<Respuesta> respuestas;
+
+métodos Categoría
+* asignarCatPregunta(Categoria categoria, Pregunta pregunta)
+añade una pregunta a la categoría con array preguntas
+
+* asignarCatRespuesta(Categoria categoria, Respuesta respuesta
+añade una respuesta a la categoría que tiene array respuestas
+
     - Pregunta
+   int id;
+   String enunciado;
+
     - Respuesta 
+    int id;
+   String enunciado;
