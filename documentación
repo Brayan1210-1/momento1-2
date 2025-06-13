@@ -1,0 +1,55 @@
+Documentacion del proyecto chatBot
+
+El proyecto chatBot tiene como fin mostrar preguntas y respuestas definidas anteriormente y registrar sugerencias si el usuario lo desea.
+
+  Paquetes: main y operadores
+    ## operadores: contiene las clases necesarias para que el chatbot pueda funcionar 
+    ## main: almacena la clase "main" con el método main 
+     
+    Clases:
+    - Usuario 
+    atributos Usuario:        
+    int id             
+    String nombre
+      
+    métodos de la clase Usuario:
+  * hacerPregunta(Categoria categoria, ArrayList<pregunta> preguntas, int i) 
+   este método tiene como finalidad acceder y mostrar el enunciado de una pregunta del array "preguntas"
+    de una categoría en específico, este método devuelve el número ingresado (i)
+
+  * obtenerRespuesta(Categoria categoria, ArrayList<Respuesta>, int i)
+   El método accede al array de respuestas e imprime el enunciado de la respuesta
+
+  * crearListaSugerencia()
+    El método crea un arraylist de tipo sugerencia vacío
+
+  * crearSugerencia(int id, String categoria_sugerencia, int id_usuario, String enunciado)
+    crea y regresa un objeto de la clase sugerencia 
+
+  * agregarSugerencia(ArrayList<Sugerencia> sugerencias, Sugerencia sugerencia)
+    añade un objeto ya existente del tipo Sugerencia a un array ya creado
+      
+    - ChatBot
+   atributos:
+   int id
+   String nombre
+   String enunciado
+   String entidad
+
+  métodos ChatBot:
+ * obtenerCategoria(Categoria categoria)
+   accede e imprime el atributo "nombre" de la clase categoría
+
+ * mostrarPreguntas(ArrayList<Pregunta> pregunta)
+   accede e imprime los enunciados de cada pregunta dentro del array por medio de un for
+
+ * mostrarRespuesta(ArrayList<Respuesta> respuesta, int opcionPregunta, Categoria categoria)
+   Imprime el enunciado de la respuesta según el número de pregunta ingresado
+
+  * presentarse(ChatBot chatbot)
+   muestra el nombre, enunciado y entidad del chatbot
+   
+    - Sugerencia
+    - Categoria
+    - Pregunta
+    - Respuesta 
